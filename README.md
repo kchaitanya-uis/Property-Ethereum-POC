@@ -30,10 +30,13 @@
 	
 	https://kchaitanya-uis.github.io/Property-Ethereum-POC/electricity-board.html
 	
-	5) Legal department will be able to authorize modifications to property details - like correcting typo's, changing property type, splitting one property into two etc.
+	5) Legal department will be able to authorize modifications to property details - like correcting typo's,
+	changing property type,splitting one property into two etc.
+	
 	https://kchaitanya-uis.github.io/Property-Ethereum-POC/legal.html
 	
 	6) Property Tax Department will be able to enter if property tax dues are paid for a property and  who paid the bill.
+	
 	https://kchaitanya-uis.github.io/Property-Ethereum-POC/propert-tax-department.html
 	
 	7) Survey divison will be able to create or modify the geo-tags of the property
