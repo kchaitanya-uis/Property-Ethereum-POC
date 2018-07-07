@@ -1,12 +1,30 @@
-# Property-Ethereum-POC
-
-A 'owns' property P.
-A,B 'owns' property P.
-B 'buys' property P from A.
-C 'inherits' property P from B.
-D 'disputes' with C about property P.
-E 'Pays Property Tax' for property P for cycle X.
-F 'Pays Electricity Bill' for property P for cycle X. 
-F 'Pays Water Bill' for property P for cycle X.
-G 'Gets Approval from Legal Authority to change details' for property P.
-H provides the geo-tagging of the property P.
+	<h1 align="center">Ethereum Blockchain based Distributed Property Ledger</h1>
+   
+    <h2 align="center">Citizen Portal</h2>
+	<br><br>
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/citizen-property-search.html
+	
+	
+	
+	
+	
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/court.html
+	
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/electricity-board.html
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/legal.html
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/propert-tax-department.html
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/revenue.html
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/sub-register-office.html
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/survey-divison.html
+	
+	https://kchaitanya-uis.github.io/Property-Ethereum-POC/water-board.html

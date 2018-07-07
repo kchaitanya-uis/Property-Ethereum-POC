@@ -125,7 +125,7 @@ App = {
               App.propertyListArray.push(propertyItem);
               //console.log(propertyIndex.toNumber(), i)
               if (propertyIndex.toNumber() + 1 == i) {
-                let str = '<h2>All Property List.</h2>';
+                let str = '<h2>All Properties.</h2>';
                 let length = App.propertyListArray.length;
 
                 for (let each in App.propertyListArray) {
@@ -171,14 +171,11 @@ App = {
     $('#content').empty();
     $('#content').append('<button onclick="App.UpdateOwnerShip(' + index + ');">OWN</button>');
     $('#content').append('<button onclick="App.UpdateCoOwnerShip(' + index + ');">COOWN</button>');
-    $('#content').append('<button onclick="App.BuyProperty(' + index + ');">BUY</button>');
+    
     $('#content').append('<button onclick="App.Inherit(' + index + ');">INHERIT</button>');
-    $('#content').append('<button onclick="App.Disput(' + index + ');">DISPUTE</button>');
-    $('#content').append('<button onclick="App.PropertyTax(' + index + ');">PAYPROPERTYTAX</button>');
-    $('#content').append('<button onclick="App.ElectricityBill(' + index + ');">PAYELECBILL</button>');
-    $('#content').append('<button onclick="App.WaterBill(' + index + ');">PAYWATERBILL</button>');
+   
     $('#content').append('<button onclick="App.ChangeOwnerShip(' + index + ');">CHANGE</button>');
-    $('#content').append('<button onclick="App.ChangeGeo(' + index + ');">GEOTAG</button>');
+
 
     console.log("Called for Property index: ", index)
     let str = '';

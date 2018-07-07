@@ -125,7 +125,7 @@ App = {
               App.propertyListArray.push(propertyItem);
               //console.log(propertyIndex.toNumber(), i)
               if (propertyIndex.toNumber() + 1 == i) {
-                let str = '<h2>All Property List.</h2>';
+                let str = '<h2>All Properties.</h2>';
                 let length = App.propertyListArray.length;
 
                 for (let each in App.propertyListArray) {
