@@ -103,7 +103,7 @@ App = {
       PropertyInstance = instance;
       return PropertyInstance.propertyIndex()
     }).then((propertyIndex) => {
-      console.log("Total Nummber of Properties: ", propertyIndex.toNumber());
+      console.log("Total Nummber of Property: ", propertyIndex.toNumber());
 
       if (propertyIndex.toNumber() > 0) {
         for (i = 1; i <= propertyIndex.toNumber(); i++) {
@@ -125,7 +125,7 @@ App = {
               App.propertyListArray.push(propertyItem);
               //console.log(propertyIndex.toNumber(), i)
               if (propertyIndex.toNumber() + 1 == i) {
-                let str = '<h2>All Properties.</h2>';
+                let str = '<h2>All Property List.</h2>';
                 let length = App.propertyListArray.length;
 
                 for (let each in App.propertyListArray) {
@@ -182,7 +182,6 @@ App = {
 
     console.log("Called for Property index: ", index)
     let str = '';
-    let _owners='';
     let currIndex = index;
 
     App.contracts.Property.deployed().then(function (instance) {
@@ -202,17 +201,10 @@ App = {
     }).then((owners) => {
 
       if (owners.length > 0) {
-        console.log(owners);
         for (let each in owners) {
           (function (idx, arr) {
-
-            _owners += "Owner: " + arr[idx] + '<br/>';
-            
-            //str += '<div>Owner : ' + arr[idx] + '</div><button type="button" class="btn btn-danger">X</button>';
-            //str += '<hr/>';
-
+            str += '<div>Owner ' + parseInt(idx + 1) + ': ' + arr[idx] + '</div><button type="button" class="btn btn-danger">X</button>';
             if (owners.length - 1 == idx) {
-              
               str += '<hr/>';
               PropertyInstance.getLogs(currIndex)
                 .then((logs) => {
@@ -223,9 +215,7 @@ App = {
                         if (logs.length - 1 == _idx) {
                           $('#loader').hide();
                           $('#content').show();
-                          $('#content').append(str); 
-                          $('#content').append("======================<br/>");
-                          $('#content').append(_owners);
+                          $('#content').append(str);
                         }
                       })(each, logs);
                     }
@@ -269,11 +259,10 @@ App = {
 
     let A = "0x1f9C6bBa334f5b231B9285fa812052257A20D914";
     let B = "0xaE0ba611603Ec52104c9aB52deDA584806BBEc14";
-    const mesz = ["0x1f9C6bBa334f5b231B9285fa812052257A20D914","0xaE0ba611603Ec52104c9aB52deDA584806BBEc14"]
 
     App.contracts.Property.deployed().then(function (instance) {
       PropertyInstance = instance;
-      return PropertyInstance.OWN(mesz, index, "Co-Owner A & B")
+      return PropertyInstance.OWN([B], index, "Co-Owner A & B")
     }).then((property) => {
       console.log(property.tx);
       App.LoadPropertyDetailPage(index);
@@ -384,7 +373,7 @@ App = {
 
     App.contracts.Property.deployed().then(function (instance) {
       PropertyInstance = instance;
-      return PropertyInstance.CHANGE_CREATOR(A, index, mesZ)
+      return PropertyInstance.CHANGE_CREATOR(C, index, mesZ)
     }).then((property) => {
       console.log(property.tx);
       App.LoadPropertyDetailPage(index);
@@ -441,7 +430,7 @@ App = {
 
     App.contracts.Property.deployed().then(function (instance) {
       PropertyInstance = instance;
-      return PropertyInstance.addProperty(name, address, description, price, [App.account], ["created"], "", { from: App.account, gas: 5000000 });
+      return PropertyInstance.addProperty(name, address, description, price, ["0x1f9C6bBa334f5b231B9285fa812052257A20D914"], ["created"], "", { from: App.account, gas: 5000000 });
     })
       .then((reply) => {
         console.log(reply.tx)
