@@ -11,18 +11,26 @@
     <!-- Bootstrap <link href="css/style.css" type="text/css" rel="stylesheet">    -->
         
   </head>
-  <body class="ova">
+  <body class="ova" onLoad ="App.LoadAllPropertyPage();">
 
+	<h1 align="center">Ethereum Blockchain based Distributed Property Ledger</h1>
+   
+    <h2 align="center">Citizen Portal</h2>
+	<br><br>
+	<!--
     <table>
       <tr>
-        <td><button type="button" class="btn" onclick="App.LoadAllPropertyPage();">All Propertys</button></td>
-        <td><button type="button" class="btn" onclick="App.LoadAddPropertyPage();">Add A Property</button></td>
-        <td><button type="button" class="btn" onclick="App.LoadAddNewAdminPage();">Add Admin</button></td>
+        <td><a href onclick="App.LoadAllPropertyPage();">Show All Properties</a></td>
+
       </tr>
     </table>
+-->
 
-    <div id="loader">
-      <p class="text-center">Loading...</p>
+    <div id="loader" align="center">
+      <p class="text-center">If you are not seeing the list of properties loaded automatically, your browser doesn't have Metamask plugin. Install the plugin and register as shown in below video to try this demo.</p>
+	  
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/Vj9ztSdKSPU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  
     </div>
 
     <div id="content"></div>

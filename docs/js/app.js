@@ -103,7 +103,7 @@ App = {
       PropertyInstance = instance;
       return PropertyInstance.propertyIndex()
     }).then((propertyIndex) => {
-      console.log("Total Nummber of Property: ", propertyIndex.toNumber());
+      console.log("Total Nummber of Properties: ", propertyIndex.toNumber());
 
       if (propertyIndex.toNumber() > 0) {
         for (i = 1; i <= propertyIndex.toNumber(); i++) {
@@ -125,7 +125,7 @@ App = {
               App.propertyListArray.push(propertyItem);
               //console.log(propertyIndex.toNumber(), i)
               if (propertyIndex.toNumber() + 1 == i) {
-                let str = '<h2>All Property List.</h2>';
+                let str = '<h2>All Properties.</h2>';
                 let length = App.propertyListArray.length;
 
                 for (let each in App.propertyListArray) {
@@ -316,7 +316,7 @@ App = {
 
     App.contracts.Property.deployed().then(function (instance) {
       PropertyInstance = instance;
-      return PropertyInstance.RECORDLOGS(index, "D dispute C 123456789012345678901234567890")
+      return PropertyInstance.RECORDLOGS(index, "D dispute C")
     }).then((property) => {
       console.log(property.tx);
       App.LoadPropertyDetailPage(index);
@@ -441,7 +441,7 @@ App = {
 
     App.contracts.Property.deployed().then(function (instance) {
       PropertyInstance = instance;
-      return PropertyInstance.addProperty(name, address, description, price, ["0x1f9C6bBa334f5b231B9285fa812052257A20D914"], ["created"], "", { from: App.account, gas: 5000000 });
+      return PropertyInstance.addProperty(name, address, description, price, [App.account], ["created"], "", { from: App.account, gas: 5000000 });
     })
       .then((reply) => {
         console.log(reply.tx)
