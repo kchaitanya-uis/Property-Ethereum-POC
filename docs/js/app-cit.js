@@ -169,16 +169,7 @@ App = {
     $('#loader').show();
     $('#content').hide();
     $('#content').empty();
-    $('#content').append('<button onclick="App.UpdateOwnerShip(' + index + ');">OWN</button>');
-    $('#content').append('<button onclick="App.UpdateCoOwnerShip(' + index + ');">COOWN</button>');
-    $('#content').append('<button onclick="App.BuyProperty(' + index + ');">BUY</button>');
-    $('#content').append('<button onclick="App.Inherit(' + index + ');">INHERIT</button>');
-    $('#content').append('<button onclick="App.Disput(' + index + ');">DISPUTE</button>');
-    $('#content').append('<button onclick="App.PropertyTax(' + index + ');">PAYPROPERTYTAX</button>');
-    $('#content').append('<button onclick="App.ElectricityBill(' + index + ');">PAYELECBILL</button>');
-    $('#content').append('<button onclick="App.WaterBill(' + index + ');">PAYWATERBILL</button>');
-    $('#content').append('<button onclick="App.ChangeOwnerShip(' + index + ');">CHANGE</button>');
-    $('#content').append('<button onclick="App.ChangeGeo(' + index + ');">GEOTAG</button>');
+
 
     console.log("Called for Property index: ", index)
     let str = '';
