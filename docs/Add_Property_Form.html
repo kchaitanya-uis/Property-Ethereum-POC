@@ -1,0 +1,78 @@
+<div class="container">
+
+    <div class="row">
+
+        <table>
+            <tr>
+                <td>
+                    <h3>Add New Property Form.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input id="s_name" type="text" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label>Address</label>
+                        <textarea id="s_address" class="form-control" rows="3" id="comment"></textarea>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="s_description" class="form-control" rows="3" id="comment"></textarea>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label>Price</label>
+                        <input id="s_price" type="text" />
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label>Owner(s)</label>
+                        
+                        <table>
+                            <tr><td>1.</td><td><input id="s_owner_1" type="text" /></td></tr>
+                            <tr><td>2.</td><td><input id="s_owner_2" type="text" /></td></tr>
+                            <tr><td>3.</td><td><input id="s_owner_3" type="text" /></td></tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label>Geo Location</label>
+                        <input id="s_geo" type="text" />
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-default" onclick="App.SaveProperty(); return false;">Save</button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
