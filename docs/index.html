@@ -11,11 +11,11 @@
     <!-- Bootstrap <link href="css/style.css" type="text/css" rel="stylesheet">    -->
         
   </head>
-  <body class="ova" onLoad ="App.LoadAllPropertyPage();">
+  <body class="ova" align="center">
 
 	<h1 align="center">Ethereum Blockchain based Distributed Property Ledger</h1>
    
-    <h2 align="center">Citizen Portal</h2>
+    <h2 align="center">List of portals</h2>
 	<br><br>
 	<!--
     <table>
@@ -25,17 +25,71 @@
       </tr>
     </table>
 -->
-
-    <div id="loader" align="center">
-      <p class="text-center">If you are not seeing the list of properties loaded automatically, your browser doesn't have Metamask plugin. Install the plugin and register as shown in below video to try this demo.</p>
-	  
-	  <iframe width="560" height="315" src="https://www.youtube.com/embed/Vj9ztSdKSPU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	  
-    </div>
+   <p>
+   ##Pre-req to run this POC<br><br>
+	
+	Metamask plugin for chrome or firefox browser and creating a user account in Renkeby Testnet.<br><br>
+   
+    ##Citizen Portal<br><br>
+	
+	1) Citizens will be able to browse / search all the properties and view all the transactions for a particular property.<br><br>
+	
+	<a href = "https://kchaitanya-uis.github.io/Property-Ethereum-POC/citizen-property-search.html">https://kchaitanya-uis.github.io/Property-Ethereum-POC/citizen-property-search.html</a><br><br>
+	
+	<p>
+	
+	##Government Portals <br><br>
+	
+	1) Revenue department will be able to add new property entry and change the owner, co-owner etc.<br><br>
+	
+	<a href="https://kchaitanya-uis.github.io/Property-Ethereum-POC/revenue.html">https://kchaitanya-uis.github.io/Property-Ethereum-POC/revenue.html</a><br><br>
+	
+	2) Sub Registrar Office will be able to add new property entry and change the owner, co-owner etc.<br><br>
+	
+	<a href="https://kchaitanya-uis.github.io/Property-Ethereum-POC/sub-register-office.html">https://kchaitanya-uis.github.io/Property-Ethereum-POC/sub-register-office.html</a><br><br>
+	
+	3) Courts will be able to create disputes for a property.<br><br>
+	
+	<a href="https://kchaitanya-uis.github.io/Property-Ethereum-POC/court.html">https://kchaitanya-uis.github.io/Property-Ethereum-POC/court.html</a><br><br>
+	
+	4) Electricity board will be able to enter if elec billis are paid for a property and  who paid the bill.<br><br>
+	
+	<a href="https://kchaitanya-uis.github.io/Property-Ethereum-POC/electricity-board.html">https://kchaitanya-uis.github.io/Property-Ethereum-POC/electricity-board.html</a><br><br>
+	
+	5) Legal department will be able to authorize modifications to property details - like correcting typo's,
+	changing property type,splitting one property into two etc.<br><br>
+	
+	<a href="https://kchaitanya-uis.github.io/Property-Ethereum-POC/legal.html">https://kchaitanya-uis.github.io/Property-Ethereum-POC/legal.html</a><br><br>
+	
+	6) Property Tax Department will be able to enter if property tax dues are paid for a property and  who paid the bill.<br><br>
+	
+	<a href="https://kchaitanya-uis.github.io/Property-Ethereum-POC/propert-tax-department.html">https://kchaitanya-uis.github.io/Property-Ethereum-POC/propert-tax-department.html</a><br><br>
+	
+	7) Survey divison will be able to create or modify the geo-tags of the property<br><br>
+	
+	<a href="https://kchaitanya-uis.github.io/Property-Ethereum-POC/survey-divison.html">https://kchaitanya-uis.github.io/Property-Ethereum-POC/survey-divison.html</a><br><br>
+	
+	8) Water board will be able to enter if water bills are paid for a property and who paid the bill.<br><br>
+	
+	<a href="https://kchaitanya-uis.github.io/Property-Ethereum-POC/water-board.html">https://kchaitanya-uis.github.io/Property-Ethereum-POC/water-board.html</a><br><br>
+	
+	
+	##Miners - Ones who run the blockchain - Not Implemented<br><br>
+	
+	1) Banks<br><br>
+	
+	2) Financial Institutions<br><br>
+	
+	3) Real estate companies<br><br>
+	
+	4) Property Owners<br><br>
+	
+	5) Prospective Large Ticket Buyers<br><br>
+	
+	6) Investors<br><br>
 
     <div id="content" align="center"></div>
 
-    <div style="position:absolute; bottom:0; width:100%; height:20px; background:darkkhaki; font-size: 11px; text-align: center; padding-top: 5px;"><p id="accountAddress" ></p></div>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
